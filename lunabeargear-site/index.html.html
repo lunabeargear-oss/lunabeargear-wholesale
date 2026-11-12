@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Bear Gear | Wholesale & Closeout Apparel - New Bedford, MA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-900 antialiased selection:bg-emerald-800 selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-stone-900 text-stone-200 text-xs py-2 px-4 text-center font-medium tracking-wide">
+        <span>📍 74 Kilburn Street, New Bedford, MA | Direct Warehouse B2B & Closeout Distribution</span>
+        <span class="mx-3">•</span>
+        <span class="text-emerald-400 font-semibold">Use code WELCOME10 for 10% off your first order</span>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-lg bg-emerald-900 flex items-center justify-center text-white font-bold text-xl">L</div>
+                <div>
+                    <span class="text-xl font-bold tracking-tight text-stone-900">LUNA BEAR GEAR</span>
+                    <span class="block text-[10px] text-stone-500 uppercase tracking-widest font-semibold">Wholesale & Closeouts</span>
+                </div>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <button onclick="toggleCart()" class="relative bg-stone-900 text-white px-4 py-2.5 rounded-xl font-medium text-sm flex items-center space-x-2 hover:bg-emerald-900 transition shadow-sm">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Cart</span>
+                    <span id="cart-count" class="bg-emerald-600 text-white text-xs w-5 h-5 rounded-full flex items-center justify-center font-bold">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-stone-900 text-white py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#34d399_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <span class="inline-block bg-emerald-900/60 text-emerald-300 border border-emerald-700/50 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-widest mb-4">Industrial Textile Reclamation & Closeouts</span>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6">Sustainable Blanks & Wholesale Overruns</h1>
+            <p class="text-lg sm:text-xl text-stone-300 max-w-2xl mx-auto mb-8 font-light">Supplying high-grade blank apparel, master case closeouts, and factory irregulars directly from our 70,000 sq. ft. New Bedford facility.</p>
+        </div>
+    </section>
+
+    <!-- Main Catalog Section -->
+    <main id="catalog" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10">
+            <div>
+                <h2 class="text-3xl font-bold tracking-tight text-stone-900">Wholesale Inventory</h2>
+                <p class="text-stone-500 mt-1">Select master case packs, mixed irregular assortments, or first-quality blanks.</p>
+            </div>
+            <div class="flex flex-wrap gap-2 mt-4 md:mt-0">
+                <button onclick="filterCatalog('all')" class="category-btn active px-4 py-2 text-xs font-semibold rounded-lg bg-stone-900 text-white transition">All Items</button>
+                <button onclick="filterCatalog('closeouts')" class="category-btn px-4 py-2 text-xs font-semibold rounded-lg bg-stone-200 text-stone-700 hover:bg-stone-300 transition">Master Case Closeouts</button>
+                <button onclick="filterCatalog('comfort-colors')" class="category-btn px-4 py-2 text-xs font-semibold rounded-lg bg-stone-200 text-stone-700 hover:bg-stone-300 transition">Comfort Colors</button>
+                <button onclick="filterCatalog('gildan')" class="category-btn px-4 py-2 text-xs font-semibold rounded-lg bg-stone-200 text-stone-700 hover:bg-stone-300 transition">Gildan Hammer</button>
+                <button onclick="filterCatalog('live-catalog')" class="category-btn px-4 py-2 text-xs font-semibold rounded-lg bg-emerald-100 text-emerald-800 hover:bg-emerald-200 transition">Live S&S Feeds</button>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Item 1: CC 1717 Mix Assorted Cases ($60/case) -->
+            <div class="product-card bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm flex flex-col" data-category="closeouts">
+                <div class="bg-stone-100 p-6 flex items-center justify-center relative">
+                    <span class="absolute top-4 left-4 bg-emerald-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">New Category Deal</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-bold text-lg text-stone-900">Comfort Colors 1717 Mix Assorted Cases</h3>
+                    <p class="text-xs text-stone-500 mt-1">Irregulars • Mixed Sizes & Mixed Colors</p>
+                    <div class="mt-4 text-2xl font-black text-stone-900">$60.00 <span class="text-xs font-normal text-stone-500">/ case of 60 pcs ($1.00/pc)</span></div>
+                    <div class="mt-auto pt-6">
+                        <button onclick="addToCart('Comfort Colors 1717 Mix Case (60 pcs)', 60.00, 'Case')" class="w-full bg-stone-900 hover:bg-emerald-900 text-white font-semibold py-3 rounded-xl transition text-sm">Add Case to Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2: Random Comfort Color Listing ($2.99) -->
+            <div class="product-card bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm flex flex-col" data-category="comfort-colors">
+                <div class="bg-stone-100 p-6 flex items-center justify-center relative">
+                    <span class="absolute top-4 left-4 bg-amber-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">Irregular Single</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-bold text-lg text-stone-900">Random Comfort Color T-Shirt (Irregular)</h3>
+                    <div class="mt-4 text-2xl font-black text-stone-900">$2.99 <span class="text-xs font-normal text-stone-500">/ piece</span></div>
+                    <div class="mt-4 space-y-3">
+                        <select id="size-rand" class="w-full text-xs border border-stone-300 rounded-lg p-2 bg-stone-50">
+                            <option value="S">Small (S)</option><option value="M">Medium (M)</option><option value="L">Large (L)</option><option value="XL">X-Large (XL)</option><option value="2XL">2XL</option><option value="3XL">3XL</option><option value="4XL">4XL</option>
+                        </select>
+                        <select id="color-rand" class="w-full text-xs border border-stone-300 rounded-lg p-2 bg-stone-50">
+                            <option value="Light Color">Light Color Tone</option><option value="Dark Color">Dark Color Tone</option>
+                        </select>
+                    </div>
+                    <div class="mt-auto pt-6">
+                        <button onclick="addRandomCC()" class="w-full bg-stone-900 hover:bg-emerald-900 text-white font-semibold py-3 rounded-xl transition text-sm">Add to Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3: CC 1717 Color Irregulars ($3/pc, 72/box) -->
+            <div class="product-card bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm flex flex-col" data-category="comfort-colors">
+                <div class="bg-stone-100 p-6 flex items-center justify-center relative">
+                    <span class="absolute top-4 left-4 bg-stone-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">Solid Size Box (72 pcs)</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-bold text-lg text-stone-900">Comfort Colors 1717 - "Color Irregulars"</h3>
+                    <div class="mt-4 text-2xl font-black text-stone-900">$216.00 <span class="text-xs font-normal text-stone-500">/ box ($3.00/pc)</span></div>
+                    <div class="mt-auto pt-6">
+                        <button onclick="addToCart('CC 1717 Color Irregulars Box (72 pcs)', 216.00, 'Box')" class="w-full bg-stone-900 hover:bg-emerald-900 text-white font-semibold py-3 rounded-xl transition text-sm">Add Box to Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4: CC 4410 Case Packs of 48 ($6.00/pc) -->
+            <div class="product-card bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm flex flex-col" data-category="comfort-colors">
+                <div class="bg-stone-100 p-6 flex items-center justify-center relative">
+                    <span class="absolute top-4 left-4 bg-emerald-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">Case Pack (48 pcs)</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-bold text-lg text-stone-900">Comfort Colors 4410 LS Pocket Tees</h3>
+                    <div class="mt-4 text-2xl font-black text-stone-900">$288.00 <span class="text-xs font-normal text-stone-500">/ case ($6.00/pc)</span></div>
+                    <div class="mt-auto pt-6">
+                        <button onclick="addToCart('CC 4410 Case Pack (48 pcs)', 288.00, 'Case')" class="w-full bg-stone-900 hover:bg-emerald-900 text-white font-semibold py-3 rounded-xl transition text-sm">Add Case to Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5: Gildan Hammer Long Sleeve ($5.00/ea) -->
+            <div class="product-card bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm flex flex-col" data-category="gildan">
+                <div class="bg-stone-100 p-6 flex items-center justify-center relative">
+                    <span class="absolute top-4 left-4 bg-stone-800 text-white text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider">Individual Units</span>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-bold text-lg text-stone-900">Gildan Hammer Long-Sleeve (H400)</h3>
+                    <p class="text-xs text-stone-500 mt-1">Black & White • First Quality</p>
+                    <div class="mt-4 text-2xl font-black text-stone-900">$5.00 <span class="text-xs font-normal text-stone-500">/ piece</span></div>
+                    <div class="mt-auto pt-6">
+                        <button onclick="addToCart('Gildan Hammer H400 LS', 5.00, 'Piece')" class="w-full bg-stone-900 hover:bg-emerald-900 text-white font-semibold py-3 rounded-xl transition text-sm">Add Piece to Order</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Slide-over Cart Drawer -->
+    <div id="cart-drawer" class="fixed inset-0 z-50 overflow-hidden hidden">
+        <div class="absolute inset-0 bg-stone-900/50 backdrop-blur-sm" onclick="toggleCart()"></div>
+        <div class="absolute inset-y-0 right-0 max-w-full flex pl-10">
+            <div class="w-screen max-w-md bg-white shadow-2xl flex flex-col">
+                <div class="p-6 bg-stone-900 text-white flex items-center justify-between">
+                    <h3 class="font-bold text-lg">Your Wholesale Order</h3>
+                    <button onclick="toggleCart()" class="text-stone-400 hover:text-white text-xl">&times;</button>
+                </div>
+                
+                <div class="p-6 flex-grow overflow-y-auto space-y-4" id="cart-items">
+                    <p class="text-stone-500 text-center py-8 text-sm">Your cart is empty.</p>
+                </div>
+
+                <div class="p-6 bg-stone-50 border-t border-stone-200 space-y-4">
+                    <div class="flex space-x-2">
+                        <input type="text" id="promo-code" placeholder="Promo Code (WELCOME10)" class="flex-grow text-xs border rounded-xl px-3 py-2">
+                        <button onclick="applyPromo()" class="bg-stone-800 text-white text-xs px-4 py-2 rounded-xl">Apply</button>
+                    </div>
+                    <div id="discount-notice" class="text-xs text-emerald-600 font-medium hidden">10% Discount Applied!</div>
+                    <div class="flex justify-between font-bold text-stone-900 pt-2"><span>Total</span><span id="cart-total">$0.00</span></div>
+                    
+                    <div class="space-y-2 pt-2">
+                        <button onclick="checkout('PayPal')" class="w-full bg-[#ffc439] hover:bg-[#f4bc32] text-stone-900 font-bold py-3 rounded-xl transition text-sm">Pay with PayPal</button>
+                        <button onclick="checkout('Express')" class="w-full bg-stone-900 hover:bg-stone-800 text-white font-bold py-3 rounded-xl transition text-sm">Apple / Google Pay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Frontend JavaScript -->
+    <script>
+        <!-- Frontend JavaScript -->
+<script>
+    let cart = [];
+    let discountActive = false;
+
+    function toggleCart() { document.getElementById('cart-drawer').classList.toggle('hidden'); }
+
+    function filterCatalog(category) {
+        document.querySelectorAll('.category-btn').forEach(btn => {
+            btn.classList.remove('bg-stone-900', 'text-white', 'bg-emerald-100', 'text-emerald-800');
+            btn.classList.add('bg-stone-200', 'text-stone-700');
+        });
+        event.target.classList.remove('bg-stone-200', 'text-stone-700');
+        if(category === 'live-catalog') {
+            event.target.classList.add('bg-emerald-100', 'text-emerald-800');
+        } else {
+            event.target.classList.add('bg-stone-900', 'text-white');
+        }
+
+        document.querySelectorAll('.product-card').forEach(card => {
+            card.style.display = (category === 'all' || card.dataset.category === category) ? 'flex' : 'none';
+        });
+    }
+
+    function addToCart(name, price, unit) {
+        cart.push({ name, price, unit, qty: 1 });
+        updateCartUI();
+        toggleCart();
+    }
+
+    function addRandomCC() {
+        const size = document.getElementById('size-rand').value;
+        const tone = document.getElementById('color-rand').value;
+        addToCart(`Random CC Irregular (${size}, ${tone})`, 2.99, 'Piece');
+    }
+
+    function updateCartUI() {
+        const container = document.getElementById('cart-items');
+        document.getElementById('cart-count').innerText = cart.length;
+
+        if (cart.length === 0) {
+            container.innerHTML = '<p class="text-stone-500 text-center py-8 text-sm">Your cart is empty.</p>';
+            document.getElementById('cart-total').innerText = '$0.00';
+            return;
+        }
+
+        container.innerHTML = '';
+        let subtotal = 0;
+
+        cart.forEach((item, index) => {
+            subtotal += item.price;
+            container.innerHTML += `
+                <div class="flex justify-between items-center bg-stone-50 p-3 rounded-xl border border-stone-200 text-xs">
+                    <div>
+                        <span class="font-bold text-stone-900 block">${item.name}</span>
+                        <span class="text-stone-500">$${item.price.toFixed(2)} per ${item.unit}</span>
+                    </div>
+                    <button onclick="removeFromCart(${index})" class="text-red-500 font-semibold p-1">Remove</button>
+                </div>
+            `;
+        });
+
+        let total = discountActive ? subtotal * 0.9 : subtotal;
+        document.getElementById('cart-total').innerText = `$${total.toFixed(2)}`;
+    }
+
+    function removeFromCart(index) { cart.splice(index, 1); updateCartUI(); }
+
+    function applyPromo() {
+        if (document.getElementById('promo-code').value.trim().toUpperCase() === 'WELCOME10') {
+            discountActive = true;
+            document.getElementById('discount-notice').classList.remove('hidden');
+            updateCartUI();
+        }
+    }
+
+    function checkout(method) { alert(`Redirecting to ${method} for lunabeargear@gmail.com...`); }
+
+    // S&S Live API Frontend Fetcher
+    async function loadLiveSSCatalog() {
+        const grid = document.getElementById('product-grid');
+        try {
+            const response = await fetch('/.netlify/functions/ss-catalog');
+            
+            if (!response.ok) {
+                grid.innerHTML += `<div class="col-span-full p-4 bg-red-50 text-red-600 rounded-xl border border-red-200" data-category="live-catalog">⚠️ Failed to load S&S Catalog. Status: ${response.status}. Check your API credentials and Netlify function logs.</div>`;
+                return;
+            }
+            
+            const products = await response.json();
+            
+            if (!products || products.length === 0) {
+                 grid.innerHTML += `<div class="col-span-full p-4 bg-amber-50 text-amber-600 rounded-xl border border-amber-200" data-category="live-catalog">No products returned from S&S API.</div>`;
+                 return;
+            }
+
+            products.slice(0, 10).forEach(product => {
+                const wholesalePrice = (product.price * 1.20).toFixed(2); 
+                const safeName = `${product.brandName} ${product.styleName}`.replace(/'/g, "\\'");
+                
+                const productCard = `
+                    <div class="product-card bg-white rounded-2xl border border-stone-200 overflow-hidden flex flex-col" data-category="live-catalog">
+                        <div class="bg-stone-100 p-6 flex justify-center relative">
+                            <span class="absolute top-4 left-4 bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-1 rounded-md">Live S&S Feed</span>
+                            <img src="${product.imageFront || ''}" alt="Product" class="h-32 object-contain mix-blend-multiply">
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="font-bold text-lg text-stone-900">${product.brandName} ${product.styleName}</h3>
+                            <p class="text-xs text-stone-500 mt-1">Style #${product.styleID} • ${product.colorName}</p>
+                            <div class="mt-4 text-2xl font-black text-stone-900">$${wholesalePrice}</div>
+                            <div class="mt-auto pt-6">
+                                <button onclick="addToCart('${safeName} - ${product.colorName}', ${wholesalePrice}, 'Piece')" class="w-full bg-stone-900 hover:bg-emerald-900 text-white font-semibold py-3 rounded-xl transition text-sm">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                grid.innerHTML += productCard;
+            });
+        } catch (error) {
+            console.error("Error loading live catalog:", error);
+            grid.innerHTML += `<div class="col-span-full p-4 bg-red-50 text-red-600 rounded-xl border border-red-200" data-category="live-catalog">⚠️ S&S API Connection Error: The Netlify backend function is not responding. Ensure the netlify/functions/ss-catalog.js folder structure is exactly correct.</div>`;
+        }
+    }
+
+    window.addEventListener('DOMContentLoaded', loadLiveSSCatalog);
+</script>
+    </script>
+</body>
+</html>
